@@ -1,6 +1,6 @@
 # opinion-minig
 
-Arquivos de teste e estudo para preparação para PAIC 2020 em Mineração de Opinião e Análise de Sentimentos no contexto de Restaurantes na cidade de Manaus.
+Arquivos de teste e estudo, preparação para PAIC 2020 em Mineração de Opinião e Análise de Sentimentos no contexto de Restaurantes na cidade de Manaus.
 
 - Aluno: Miguel Vanderlei de Oliveira
 - Orientador: Prof. Dr. Tiago Eugênio de Melo
