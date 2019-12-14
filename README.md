@@ -9,6 +9,4 @@ O projeto tem como objetivo geral capturar comentários acerca dos restaurantes 
 - Aluno: Miguel Vanderlei de Oliveira
 - Orientador: Prof. Dr. Tiago Eugênio de Melo
 
-Laboratório de Sistemas Inteligentes
-Escola Superior de Tecnologia
-Universidade do Estado do Amazonas
+Laboratório de Sistemas Inteligentes / Escola Superior de Tecnologia / Universidade do Estado do Amazonas
