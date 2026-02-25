@@ -1,0 +1,1102 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Live.tt | Intelligence Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #6366f1; --bg: #f8fafc; --card-bg: #ffffff; --accent: #be185d; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); margin: 0; padding: 20px; scroll-behavior: smooth; color: #1e293b; }
+        .header { text-align: center; padding: 40px; background: linear-gradient(135deg, #1e1b4b 0%, #4338ca 100%); color: white; border-radius: 16px; margin-bottom: 25px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+
+        .nav-summary { background: white; padding: 20px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); position: sticky; top: 10px; z-index: 100; border: 1px solid #e2e8f0; }
+        .nav-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+        .nav-item { background: #f1f5f9; padding: 8px 14px; border-radius: 8px; text-decoration: none; color: var(--primary); font-size: 0.85em; font-weight: 600; border: 1px solid #e2e8f0; transition: 0.2s; }
+        .nav-item:hover { background: var(--primary); color: white; border-color: var(--primary); }
+
+        .topic-section { margin-top: 50px; scroll-margin-top: 120px; }
+        .topic-header { display: flex; align-items: center; gap: 15px; margin-bottom: 25px; }
+        .topic-badge { background: var(--primary); color: white; padding: 6px 20px; border-radius: 30px; font-size: 0.9em; font-weight: 700; letter-spacing: 1px; }
+
+        .trend-card { background: white; border-radius: 12px; padding: 30px; margin-bottom: 30px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02); }
+        .trend-title { color: var(--primary); margin: 0 0 15px 0; font-size: 1.6em; border-bottom: 2px solid #f1f5f9; padding-bottom: 12px; }
+
+        .label { font-weight: 700; color: #64748b; font-size: 0.8em; text-transform: uppercase; display: block; margin-top: 20px; letter-spacing: 0.5px; }
+        .content { line-height: 1.7; color: #334155; margin-top: 8px; font-size: 1.05em; }
+
+        .links-area { margin-top: 25px; padding-top: 20px; border-top: 1px dashed #e2e8f0; }
+        .centroid-box { background: #fffbeb; border: 1px solid #fef3c7; padding: 15px; border-radius: 10px; margin-bottom: 15px; }
+        .centroid-tag { font-size: 0.7em; font-weight: 800; color: #b45309; background: #fef3c7; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; display: inline-block; }
+
+        .link-list { display: grid; grid-template-columns: 1fr; gap: 8px; }
+        .url-link { font-size: 0.9em; color: var(--primary); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .url-link:hover { text-decoration: underline; }
+
+        footer { text-align: center; padding: 50px; color: #94a3b8; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div style="max-width: 1100px; margin: 0 auto;">
+        <header class="header">
+            <h1 style="margin:0; font-size: 2.5em; letter-spacing: -1px;">🚀 Live.tt Intelligence Dashboard</h1>
+            <p style="opacity: 0.9; font-weight: 300; margin-top: 10px;">Relatório Estratégico de Tendências e Comportamento Digital</p>
+        </header>
+
+        <nav class="nav-summary">
+            <strong>📌 Tópicos com Trends Identificadas:</strong>
+            <div class="nav-links">
+<a href="#topico_1" class="nav-item">Tópico 1 (2 Trends)</a><a href="#topico_2" class="nav-item">Tópico 2 (2 Trends)</a><a href="#topico_3" class="nav-item">Tópico 3 (2 Trends)</a><a href="#topico_5" class="nav-item">Tópico 5 (3 Trends)</a><a href="#topico_7" class="nav-item">Tópico 7 (3 Trends)</a><a href="#topico_8" class="nav-item">Tópico 8 (4 Trends)</a>
+            </div>
+        </nav>
+<section id="topico_1" class="topic-section"><div class="topic-header"><span class="topic-badge">TÓPICO 1</span></div>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">kwai virar pra ka 💥Meu Deus 😮 a família de Shrek 💥🤞o Shrek 💥👀👄👀a</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 10 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">Esta trend resgata e reimagina o humor atemporal de "memes antigos" e virais clássicos da internet brasileira. Utilizando áudios conhecidos e situações "pov" (point of view) de constrangimento ou absurdo, os criadores geram vídeos que culminam em uma reviravolta cômica. Elementos visuais como o famoso final "Directed by Robert B. Weide" são usados para pontuar a ironia e a identificação com momentos hilários da vida real.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Marcas podem aproveitar a nostalgia recriando situações cômicas e relacionáveis do cotidiano que se encaixem em seus produtos ou serviços, utilizando a estética dos "memes antigos". Imagine um cenário "pov" onde o produto ou a marca resolve uma situação embaraçosa ou inesperada, finalizando com o tom irônico da trend, como o "Directed by Robert B. Weide". Isso ativa a memória afetiva do público e gera engajamento através do humor nostálgico e da capacidade de viralização dos memes.
+
+Riscos e Considerações: A autenticidade é crucial; a marca deve garantir que a adaptação da trend seja orgânica e não force a barra, evitando parecer "cringe" ou descolada. É vital verificar a origem dos áudios e memes para evitar associações indesejadas ou direitos autorais, além de garantir que o humor seja inclusivo e não ofensivo. A execução deve ser impecável para ressoar positivamente com o público-alvo que entende as referências.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@leleh_ama_vcs/video/7601290165012778260" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@leleh_ama_vcs/video/7601290165012778260</a>
+                    <div class="url-sentence">kwai virar pra ka 💥Meu Deus 😮 a família de Shrek 💥🤞o Shrek 💥👀👄👀a</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@adrianolimayt/video/7605664865159548181" target="_blank" class="url-link">• https://www.tiktok.com/@adrianolimayt/video/7605664865159548181</a>
+                    <div class="url-sentence">Como colocar memes Engraçados nos seus Vídeos do</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@playtubee/video/7548881393112059141" target="_blank" class="url-link">• https://www.tiktok.com/@playtubee/video/7548881393112059141</a>
+                    <div class="url-sentence">pov: crianças tranquilas da próxima vez 😡 você vai pra escola 📚✂️ sem chuva</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@oryft/video/7606327825070591252" target="_blank" class="url-link">• https://www.tiktok.com/@oryft/video/7606327825070591252</a>
+                    <div class="url-sentence">pov: memes antigos</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@sofiahvlog/video/7524077257275477254" target="_blank" class="url-link">• https://www.tiktok.com/@sofiahvlog/video/7524077257275477254</a>
+                    <div class="url-sentence">Manda pro seu amigo Anderson 😂😂😂</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@comedyfunny65/video/7578658572729371912" target="_blank" class="url-link">• https://www.tiktok.com/@comedyfunny65/video/7578658572729371912</a>
+                    <div class="url-sentence">pov: avós vó fala filho faz um beatbox aí 🎙️o quê</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@lipeondaeletronicos/video/7598633118450404615" target="_blank" class="url-link">• https://www.tiktok.com/@lipeondaeletronicos/video/7598633118450404615</a>
+                    <div class="url-sentence">Como colocar memes Engraçados no seu video pepo mesmo</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@zeromeia02/video/7429824237940133126" target="_blank" class="url-link">• https://www.tiktok.com/@zeromeia02/video/7429824237940133126</a>
+                    <div class="url-sentence">vou fechar grandona as costa toda só basta eu sair daqui Mas você não</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@rice.postiing/video/7526660709892050232" target="_blank" class="url-link">• https://www.tiktok.com/@rice.postiing/video/7526660709892050232</a>
+                    <div class="url-sentence">Eii tá vendo essa pedra Quanto mais a água mole bate na pedra Mais</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@som.e.meme/video/7183821893055646981" target="_blank" class="url-link">• https://www.tiktok.com/@som.e.meme/video/7183821893055646981</a>
+                    <div class="url-sentence">Directed by ROBERT B</div>
+                </div>
+                </div></div></article>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">50 ANOS DE CASADOS ELA QUE MATA PORCO 😂😂😂 GENIVALDO, FAZ CINQUENTA ANOS DE</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 5 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">Esta trend consiste em narrativas curtas de humor que subvertem expectativas, utilizando diálogos cômicos e situações absurdas. Os vídeos abordam temas do cotidiano com uma lente irônica ou exagerada, culminando em uma piada com reviravolta inesperada. A essência é o choque e a diversão gerados pela falta de bom senso aparente na punchline.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Marcas podem adotar este formato para criar narrativas cômicas que subvertam expectativas sobre seu produto ou serviço. Desenvolvam diálogos curtos e situações do cotidiano que levem a uma reviravolta inesperada e hilária, destacando um benefício de forma memorável. A chave é o uso de humor autodepreciativo ou absurdo para gerar conexão e viralidade com a audiência.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@jp..78/video/7595325146274041096" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@jp..78/video/7595325146274041096</a>
+                    <div class="url-sentence">50 ANOS DE CASADOS ELA QUE MATA PORCO 😂😂😂 GENIVALDO, FAZ CINQUENTA ANOS DE</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@sampa_ia/video/7606505854598171922" target="_blank" class="url-link">• https://www.tiktok.com/@sampa_ia/video/7606505854598171922</a>
+                    <div class="url-sentence">TU TÁ SAINDO ATRÁS DE RAPARIGA</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@pedro.dubis/video/7505397830333385990" target="_blank" class="url-link">• https://www.tiktok.com/@pedro.dubis/video/7505397830333385990</a>
+                    <div class="url-sentence">PEDRO DÚBIS NÃO REPOSTE</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@audios.whatsapp99/video/7358582282002763013" target="_blank" class="url-link">• https://www.tiktok.com/@audios.whatsapp99/video/7358582282002763013</a>
+                    <div class="url-sentence">SEQUÊNCIA DE PIADAS</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@memestododiasss/video/7575240967733792018" target="_blank" class="url-link">• https://www.tiktok.com/@memestododiasss/video/7575240967733792018</a>
+                    <div class="url-sentence">SIGA PARA MAIS</div>
+                </div>
+                </div></div></article></section><section id="topico_2" class="topic-section"><div class="topic-header"><span class="topic-badge">TÓPICO 2</span></div>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">dazango_blox67 MANO SÉRIO ALGUÉM ME EXPLICA SOBRENATURAL QUE ACONTECE NA INTERNET QUE SIMPLESMENTE LEVANTA</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 18 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">A trend gira em torno da fascinação e da frustração com a viralização no TikTok, onde criadores questionam a lógica do algoritmo e a aparente aleatoriedade de vídeos simples que explodem. Há uma busca incessante por "receitas" de sucesso, incluindo o uso de ferramentas de IA ou a exploração de temas em alta, em contraste com a percepção de que autenticidade sem esforço pode ser o verdadeiro "buff". Isso reflete a tensão entre a produção de conteúdo altamente otimizado e a espontaneidade que, por vezes, desafia as expectativas e domina a plataforma.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Grandes marcas podem capitalizar essa trend ao criar narrativas que celebrem ou ironizem a imprevisibilidade do sucesso online, mostrando o lado humano por trás da criação de conteúdo. Podem também incentivar campanhas de user-generated content que valorizem a espontaneidade e a autenticidade, alinhando-se com a estética "crua" que desafia o conteúdo superproduzido. Colaborações com creators que desmistificam o algoritmo ou que se destacam pela sua originalidade podem gerar uma conexão mais genuína e relevante com o público.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@dazango_blox67/video/7581936765615820039" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@dazango_blox67/video/7581936765615820039</a>
+                    <div class="url-sentence">dazango_blox67 MANO SÉRIO ALGUÉM ME EXPLICA SOBRENATURAL QUE ACONTECE NA INTERNET QUE SIMPLESMENTE LEVANTA</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@faturandoz/video/7599391983349550354" target="_blank" class="url-link">• https://www.tiktok.com/@faturandoz/video/7599391983349550354</a>
+                    <div class="url-sentence">COMO FAZER ESSES VÍDEOS QUE ESTÃO FURANDO A BOLHA E VIRALIZANDO MUITO, FAZER, ESSE</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@dailydudinhagomes/video/7592758423381413141" target="_blank" class="url-link">• https://www.tiktok.com/@dailydudinhagomes/video/7592758423381413141</a>
+                    <div class="url-sentence">EU QUERO VIRALIZAR NO TIK TOK ESSA SEMANA ❤️✨</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@dicassobretiktok1/video/7550003924124617990" target="_blank" class="url-link">• https://www.tiktok.com/@dicassobretiktok1/video/7550003924124617990</a>
+                    <div class="url-sentence">pegue a dica</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@metropolesfun/video/7567083028829375752" target="_blank" class="url-link">• https://www.tiktok.com/@metropolesfun/video/7567083028829375752</a>
+                    <div class="url-sentence">ALICE E LULU, VIRAIS DA INTERNET PROMOVEM ENCONTRO FOFO</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@pontualizei_/video/7564435942442962184" target="_blank" class="url-link">• https://www.tiktok.com/@pontualizei_/video/7564435942442962184</a>
+                    <div class="url-sentence">JOVENS FAZEM FESTAS DENTRO DE ESGOTO A CÉU ABERTO DA CIDADE EM PONTO DE</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@_editor_dark/video/7584982613153058055" target="_blank" class="url-link">• https://www.tiktok.com/@_editor_dark/video/7584982613153058055</a>
+                    <div class="url-sentence">3 DICAS PARA VIRALIZAR NO ; DICA 1 USER AS HASHTAGS CERTAS; DICA 2</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@fernandaconcon/video/6920726235547028742" target="_blank" class="url-link">• https://www.tiktok.com/@fernandaconcon/video/6920726235547028742</a>
+                    <div class="url-sentence">Responder ao comentário de</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@mrnedicao/video/7596694562236534036" target="_blank" class="url-link">• https://www.tiktok.com/@mrnedicao/video/7596694562236534036</a>
+                    <div class="url-sentence">Como VIRALIZAR NO TIK TOK ESSA SEMANA; 1</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@albertokouty.shop/video/7594203868339424533" target="_blank" class="url-link">• https://www.tiktok.com/@albertokouty.shop/video/7594203868339424533</a>
+                    <div class="url-sentence">Nova FUNÇÃO no tik tok para VIRALIZAR</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@sev7njogos/video/7489226568229833990" target="_blank" class="url-link">• https://www.tiktok.com/@sev7njogos/video/7489226568229833990</a>
+                    <div class="url-sentence">JOGO; ; esse jogo é simplesmente GENIAL</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@itaipavastudio/video/7609362456179363090" target="_blank" class="url-link">• https://www.tiktok.com/@itaipavastudio/video/7609362456179363090</a>
+                    <div class="url-sentence">ESSA É A NOVA ALENCAR DO PANAMÁ</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@tecnogeek.oficial/video/7324682770188471558" target="_blank" class="url-link">• https://www.tiktok.com/@tecnogeek.oficial/video/7324682770188471558</a>
+                    <div class="url-sentence">CONTROLE, OUTRO, TUDO, SE, VOCÊ, APLICATIVO, ACESSO, E A, ACONTECENDO, CELULAR, MENSAGENS, OUVIR,</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@faturandoz/video/7598666828189093141" target="_blank" class="url-link">• https://www.tiktok.com/@faturandoz/video/7598666828189093141</a>
+                    <div class="url-sentence">COMO FAZER REESE'S DE WHAT QUE MONETIZANDO ROOM</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@iisa.camargosc/video/7596078918285724946" target="_blank" class="url-link">• https://www.tiktok.com/@iisa.camargosc/video/7596078918285724946</a>
+                    <div class="url-sentence">Como sair da bolha das 200 visualizações</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@manuellapeixotto_/video/7596035777990102290" target="_blank" class="url-link">• https://www.tiktok.com/@manuellapeixotto_/video/7596035777990102290</a>
+                    <div class="url-sentence">COMO EU CONSEGUI BATER 5 MIL SEGUIDORES EM 1 semana</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@jeinfluencia/video/7469830821000596791" target="_blank" class="url-link">• https://www.tiktok.com/@jeinfluencia/video/7469830821000596791</a>
+                    <div class="url-sentence">COMO USAR O CREATOR SEARCH INSIGHT NA PRÁTICA; tá todo mundo falando dele mas</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@dreyz1xz/video/7540075759952497926" target="_blank" class="url-link">• https://www.tiktok.com/@dreyz1xz/video/7540075759952497926</a>
+                    <div class="url-sentence">to com uma novinha midia não posso mostrar se as amiguinhas descobre toda vez</div>
+                </div>
+                </div></div></article>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">Responder ao comentário de Heloisa Você promoveu algum vídeo</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 10 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">Esta trend consiste em criadores de conteúdo compartilhando dicas e "segredos" para alcançar crescimento orgânico e viralização rápida no TikTok. Os vídeos frequentemente desmistificam o algoritmo e desencorajam o uso do recurso "Promover" para fins de engajamento genuíno. A abordagem é educativa, com Q&A e depoimentos pessoais sobre estratégias gratuitas para ganhar seguidores e visualizações.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Grandes marcas podem se inserir na trend oferecendo seus próprios "segredos" de sucesso em campanhas ou produtos, respondendo a perguntas frequentes de consumidores sobre seu universo. Podem também desmistificar mitos sobre seus serviços ou indústria, posicionando-se como fontes autênticas de informação valiosa para sua audiência. Uma marca pode, inclusive, compartilhar de forma transparente sua estratégia de conteúdo no TikTok, mostrando o equilíbrio entre orgânico e pago para atingir objetivos específicos.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@adjeniferwest/video/7592558496009227540" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@adjeniferwest/video/7592558496009227540</a>
+                    <div class="url-sentence">Responder ao comentário de Heloisa Você promoveu algum vídeo</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@pedrodecarvalho/video/7301082996659014918" target="_blank" class="url-link">• https://www.tiktok.com/@pedrodecarvalho/video/7301082996659014918</a>
+                    <div class="url-sentence">Nova Música Viral+++ views p/ contas menoresSalve o vídeo e siga o perfil p/</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@pedrodecarvalho/video/6987122033461136645" target="_blank" class="url-link">• https://www.tiktok.com/@pedrodecarvalho/video/6987122033461136645</a>
+                    <div class="url-sentence">Alerta de Trend Viral</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@catlencomc/video/7462754700920671493" target="_blank" class="url-link">• https://www.tiktok.com/@catlencomc/video/7462754700920671493</a>
+                    <div class="url-sentence">Eu sou a moça que postou 75 vídeos em 3 dias e sai de</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@dicasdakatiktok/video/7410910257611918598" target="_blank" class="url-link">• https://www.tiktok.com/@dicasdakatiktok/video/7410910257611918598</a>
+                    <div class="url-sentence">NÃO USE O PROMOVER nunca use o promover nos seus vídeos se você não</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@madeerblx/video/7597468398288768264" target="_blank" class="url-link">• https://www.tiktok.com/@madeerblx/video/7597468398288768264</a>
+                    <div class="url-sentence">Voces LINDAS QUE puedes usar en tus videos</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@catlencomc/video/7463454010201099525" target="_blank" class="url-link">• https://www.tiktok.com/@catlencomc/video/7463454010201099525</a>
+                    <div class="url-sentence">Desativei isso no meu e cresci 100 mil seguidores em 10 dias de conta</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@dicasdakatiktok/video/7440156877528501559" target="_blank" class="url-link">• https://www.tiktok.com/@dicasdakatiktok/video/7440156877528501559</a>
+                    <div class="url-sentence">ALGORITMO NOVO DO agora ninguém mais vai conseguir flopar seu perfil lembra daquele negócio</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@grupo_ferreiralima/video/7527386673135570182" target="_blank" class="url-link">• https://www.tiktok.com/@grupo_ferreiralima/video/7527386673135570182</a>
+                    <div class="url-sentence">Folgar na sexta, Vídeo com o Marketing, Solicite seu benefício com a Ferreira Lima</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@nandyzorzan/video/7602362044746108174" target="_blank" class="url-link">• https://www.tiktok.com/@nandyzorzan/video/7602362044746108174</a>
+                    <div class="url-sentence">Viralize seu perfil em fevereiro; Música do mês de fevereiro; Trend da música de</div>
+                </div>
+                </div></div></article></section><section id="topico_3" class="topic-section"><div class="topic-header"><span class="topic-badge">TÓPICO 3</span></div>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">Português:, Inglês:, Nordestino:</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 18 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">A trend gira em torno da celebração e discussão das nuances linguísticas, comparando sotaques, gírias regionais e a evolução do vocabulário em diferentes contextos. Ela aborda desde o uso "correto" da gramática até a popularidade de abreviações da Geração Z e a curiosidade sobre expressões locais. É uma exploração da identidade cultural através da linguagem e de suas constantes transformações.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Marcas podem criar conteúdo interativo convidando a audiência a compartilhar suas expressões regionais favoritas ou gírias relacionadas aos seus produtos, promovendo um senso de comunidade e pertencimento. Podem desenvolver quizzes educativos sobre a linguagem do seu setor ou produtos, ou até mesmo produzir vídeos bem-humorados que explorem mal-entendidos linguísticos em diferentes regiões. Utilizar vozes com sotaques diversos em campanhas pode autenticar a comunicação e gerar uma maior identificação com públicos variados.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@memes_edits17/video/7566349962422865159" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@memes_edits17/video/7566349962422865159</a>
+                    <div class="url-sentence">Português:, Inglês:, Nordestino:</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@wzheav/video/7421657812083936517" target="_blank" class="url-link">• https://www.tiktok.com/@wzheav/video/7421657812083936517</a>
+                    <div class="url-sentence">UNIÃO FLASCO MANO É SEM CÃO BATENDO PUNHETA COM O PAU E SE ESSA</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@keyla.kfuri/video/7581658738717625621" target="_blank" class="url-link">• https://www.tiktok.com/@keyla.kfuri/video/7581658738717625621</a>
+                    <div class="url-sentence">QUE GRAVAR TANTO PERTURBAR ENTÃO PORTUGUÊS VOCÊ NÃO PRESTA SALVA MERDA COMEÇANDO UM DOS</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@atlanttix_/video/7595324945673063698" target="_blank" class="url-link">• https://www.tiktok.com/@atlanttix_/video/7595324945673063698</a>
+                    <div class="url-sentence">MANO, VOCÊS Bro, you guysINVENTAM PALAVRAS make up wordsGÍRIAS E EXPRESSÕES Slang and expressionsBahiaRio</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@exploralibras/video/7561162133744979256" target="_blank" class="url-link">• https://www.tiktok.com/@exploralibras/video/7561162133744979256</a>
+                    <div class="url-sentence">APRENDA SEU NOME</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@fabiovelloso9/video/7373323439135837445" target="_blank" class="url-link">• https://www.tiktok.com/@fabiovelloso9/video/7373323439135837445</a>
+                    <div class="url-sentence">NÃO DIGA O MESMO PAÍS BRASIL FÁCIL: 1 MÉDIO: 2 DIFÍCIL: 3 4 5</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@tavaresluisss/video/7299998832941665541" target="_blank" class="url-link">• https://www.tiktok.com/@tavaresluisss/video/7299998832941665541</a>
+                    <div class="url-sentence">Frases brasileiras que eu não entendo</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@fabiovelloso9/video/7424233155722284293" target="_blank" class="url-link">• https://www.tiktok.com/@fabiovelloso9/video/7424233155722284293</a>
+                    <div class="url-sentence">Quiz Abreviacoes</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@teacherelza/video/7321483307286351109" target="_blank" class="url-link">• https://www.tiktok.com/@teacherelza/video/7321483307286351109</a>
+                    <div class="url-sentence">ALFABETO EM INGLÊS A - ei B - bi C - ci D -</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@estavu/video/7598723273999863048" target="_blank" class="url-link">• https://www.tiktok.com/@estavu/video/7598723273999863048</a>
+                    <div class="url-sentence">Olá meus amores</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@justanothervintagegirl/video/7589431500148395272" target="_blank" class="url-link">• https://www.tiktok.com/@justanothervintagegirl/video/7589431500148395272</a>
+                    <div class="url-sentence">português: inglês: Lula:</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@descobrindoomundo31/video/7501353401222057221" target="_blank" class="url-link">• https://www.tiktok.com/@descobrindoomundo31/video/7501353401222057221</a>
+                    <div class="url-sentence">Você sabia existe somente e Portugal Brasil que falam português</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@larissaapinheiro_/video/6958578301275278597" target="_blank" class="url-link">• https://www.tiktok.com/@larissaapinheiro_/video/6958578301275278597</a>
+                    <div class="url-sentence">17:48 Todas no iCloud Nomes engraçados Sheila Meusako Ana Konda Beijamin Arola Deyde Costa</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@abc.poliglota/video/7456572491201383686" target="_blank" class="url-link">• https://www.tiktok.com/@abc.poliglota/video/7456572491201383686</a>
+                    <div class="url-sentence">Como eu me tornei poliglota</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@lepluscaroline/video/7576709901238455559" target="_blank" class="url-link">• https://www.tiktok.com/@lepluscaroline/video/7576709901238455559</a>
+                    <div class="url-sentence">curso de espanhol e inglês gratuito com certificado sabia que tem curso de inglês</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@teacherjulialopez/video/7436129890237304120" target="_blank" class="url-link">• https://www.tiktok.com/@teacherjulialopez/video/7436129890237304120</a>
+                    <div class="url-sentence">5 sotaques em menos de um minuto, POSH BRITISH, ALABAMA, IRLANDÊS, LOS ANGELES, COCKNEY/ADELE</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@quiz.inside/video/7431357799155698949" target="_blank" class="url-link">• https://www.tiktok.com/@quiz.inside/video/7431357799155698949</a>
+                    <div class="url-sentence">ABREVIAÇÕES DE PALAVRAS PDP TNC SLV BJ SDDS SQN FDP CMG Pode Pá Tomar</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@danivfrantzen/video/7340391899179535622" target="_blank" class="url-link">• https://www.tiktok.com/@danivfrantzen/video/7340391899179535622</a>
+                    <div class="url-sentence">Dicas para aprender outro idioma mais rápido</div>
+                </div>
+                </div></div></article>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">pegue a dica</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 17 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">Esta trend reflete o interesse crescente no aprimoramento da comunicação e do desenvolvimento pessoal, especialmente no ambiente digital. Os conteúdos variam desde dicas para viralizar em plataformas como o TikTok até aulas sobre a norma culta da língua portuguesa, dicção e aprendizado de novos idiomas. O cerne é a busca por ferramentas e conhecimentos que capacitem os usuários a se expressarem melhor e a ganharem visibilidade.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Uma grande marca pode se posicionar como facilitadora do conhecimento, oferecendo dicas práticas sobre como seus produtos ou serviços podem otimizar a comunicação e a expressão dos consumidores em seus respectivos nichos. Pode também criar desafios de dicção ou quizzes de linguagem com um toque de humor, conectando-se de forma leve com a busca por correção linguística. Explorar interações com Inteligência Artificial, pedindo à IA para descrever o universo da marca de forma criativa ou educativa, também geraria engajamento e relevância cultural.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@dicassobretiktok1/video/7550003924124617990" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@dicassobretiktok1/video/7550003924124617990</a>
+                    <div class="url-sentence">pegue a dica</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@dgnaturall/video/7084321676330093829" target="_blank" class="url-link">• https://www.tiktok.com/@dgnaturall/video/7084321676330093829</a>
+                    <div class="url-sentence">Responder ao comentário de gustavo</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@keyla.kfuri/video/7586855974485495058" target="_blank" class="url-link">• https://www.tiktok.com/@keyla.kfuri/video/7586855974485495058</a>
+                    <div class="url-sentence">Já tô em casa</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@abclinguaportuguesa/video/7517306819732114693" target="_blank" class="url-link">• https://www.tiktok.com/@abclinguaportuguesa/video/7517306819732114693</a>
+                    <div class="url-sentence">A importância da vírgula</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@galactechgt/video/7329992683005414662" target="_blank" class="url-link">• https://www.tiktok.com/@galactechgt/video/7329992683005414662</a>
+                    <div class="url-sentence">"GENTE EU COLOQUEI MEU CELULAR EM HEBRAICO OQUE EU FAÇO</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@presentright/video/7585343416112811272" target="_blank" class="url-link">• https://www.tiktok.com/@presentright/video/7585343416112811272</a>
+                    <div class="url-sentence">Fale no ritmo Fácil Medio Difícil; DIGA A PALAVRA NA BATIDA; NÍVEL FÁCIL; NÍVEL</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@nicolimunhato/video/7572661586544971064" target="_blank" class="url-link">• https://www.tiktok.com/@nicolimunhato/video/7572661586544971064</a>
+                    <div class="url-sentence">tudo muda depois que você aprende as 10 frases mais úteis do inglês</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@portuguesparaavida/video/7194578781896592646" target="_blank" class="url-link">• https://www.tiktok.com/@portuguesparaavida/video/7194578781896592646</a>
+                    <div class="url-sentence">VOCÊ SABE FAZER USO DA PALAVRA “LITERALMENTE”</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@petry_f/video/7567512355731426590" target="_blank" class="url-link">• https://www.tiktok.com/@petry_f/video/7567512355731426590</a>
+                    <div class="url-sentence">Pedindo pro CHAT GPT tentar me assustar</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@treinando.sua.dic/video/7496599552548670725" target="_blank" class="url-link">• https://www.tiktok.com/@treinando.sua.dic/video/7496599552548670725</a>
+                    <div class="url-sentence">Teste de dicção (apresentando um discurso)</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@vinixzzzzzzz/video/7386704368499739910" target="_blank" class="url-link">• https://www.tiktok.com/@vinixzzzzzzz/video/7386704368499739910</a>
+                    <div class="url-sentence">quando falam q "rlk" é abreviação para: rebolo lentinho e kiko gostoso pessoas q</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@thezapoficiial/video/7600208562157112597" target="_blank" class="url-link">• https://www.tiktok.com/@thezapoficiial/video/7600208562157112597</a>
+                    <div class="url-sentence">Conselho SE INSCREVA E DEIXA O LIKE</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@salonlinebrasil/video/7491443364844276997" target="_blank" class="url-link">• https://www.tiktok.com/@salonlinebrasil/video/7491443364844276997</a>
+                    <div class="url-sentence">Erramos, desculpa, Maju</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@lua_magallhaes1/video/6929894468527115526" target="_blank" class="url-link">• https://www.tiktok.com/@lua_magallhaes1/video/6929894468527115526</a>
+                    <div class="url-sentence">Como que se chama isso na sua cidade</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@pedrodecarvalho/video/7340790683940195590" target="_blank" class="url-link">• https://www.tiktok.com/@pedrodecarvalho/video/7340790683940195590</a>
+                    <div class="url-sentence">9,1K curtidas, 43,3K corações, 32K compartilhamentos; Melhores Hashtags para ; As hashtags funcionam como</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@lets.talkbr/video/7312434647688858886" target="_blank" class="url-link">• https://www.tiktok.com/@lets.talkbr/video/7312434647688858886</a>
+                    <div class="url-sentence">Alguém já viu uma galinha fazer "Cock-a-doodle-doo"</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@souza_jq/video/7007402651063160070" target="_blank" class="url-link">• https://www.tiktok.com/@souza_jq/video/7007402651063160070</a>
+                    <div class="url-sentence">Gente eu achei o melhor aplicativo pra passar o tempo</div>
+                </div>
+                </div></div></article></section><section id="topico_5" class="topic-section"><div class="topic-header"><span class="topic-badge">TÓPICO 5</span></div>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">qual influenciador me define (versão masculina) oque eu achei que ia aparece oque apareceu</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 5 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">Esta trend reflete sobre a identidade e a percepção de influenciadores, comparando expectativas com a realidade da vida de criadores de conteúdo. Ela explora a admiração por figuras públicas, mas também critica a falta de engajamento e expõe os desafios, polêmicas e vulnerabilidades por trás da fama. É um olhar multifacetado sobre a cultura da influência e a autenticidade online.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Marcas podem criar campanhas focadas na autenticidade, mostrando os bastidores reais de seus processos ou a jornada de pessoas comuns usando seus produtos. Invista em micro influenciadores que demonstrem engajamento genuíno com a comunidade, valorizando a conexão humana em detrimento da fama. Também é possível lançar conteúdos que abordem a realidade do trabalho, desafios e conquistas, ressoando com a transparência esperada pelo público.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@sandezx_/video/7557826232503651640" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@sandezx_/video/7557826232503651640</a>
+                    <div class="url-sentence">qual influenciador me define (versão masculina) oque eu achei que ia aparece oque apareceu</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@jamesrivia/video/7276657116927102214" target="_blank" class="url-link">• https://www.tiktok.com/@jamesrivia/video/7276657116927102214</a>
+                    <div class="url-sentence">EU ODEIO FAMOSO QUE IGNORA OS SEGUIDORES indignado como uma famosa no tanto faz</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@matheusbrenof/video/7603123392677530898" target="_blank" class="url-link">• https://www.tiktok.com/@matheusbrenof/video/7603123392677530898</a>
+                    <div class="url-sentence">Coisas que o Roblox me deu por eu ser influenciador</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@portalnaintegra/video/7597471052477828372" target="_blank" class="url-link">• https://www.tiktok.com/@portalnaintegra/video/7597471052477828372</a>
+                    <div class="url-sentence">Polêmica: influencer revela relação íntima com a madrasta após conselho de psicóloga</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@sabichaoclash/video/7233189085295185157" target="_blank" class="url-link">• https://www.tiktok.com/@sabichaoclash/video/7233189085295185157</a>
+                    <div class="url-sentence">cara tu lembra da Aline Faria, aquela influenciadora de Free Fire, OU pelo menos</div>
+                </div>
+                </div></div></article>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">Como eu consegui parceria com a Shein</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 9 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">Esta trend é sobre o anseio de se tornar um influenciador digital bem-sucedido e monetizar conteúdo em plataformas sociais. Criadores compartilham tutoriais detalhados sobre como obter parcerias de marca, estratégias para viralizar e informações sobre a monetização das plataformas. É uma visão transparente e aspiracional sobre o caminho para o sucesso na economia dos criadores de conteúdo.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Uma grande marca pode criar um programa de embaixadores com um tutorial claro e acessível, detalhando os passos para que criadores se associem e gerem conteúdo autêntico sobre seus produtos. A marca poderia também lançar um desafio de conteúdo que estimule a criatividade e ofereça premiações em dinheiro ou produtos, diretamente conectadas ao tema de monetização e crescimento para aspirantes a influenciadores. Além disso, pode patrocinar conteúdo educacional que aborde os desafios e sucessos da vida de um criador em seu nicho.
+
+Gatilhos da trend: A trend é impulsionada pela aspiração à fama e à independência financeira através da criação de conteúdo digital. O desejo de "desvendar os segredos" do sucesso, a busca por atalhos e ferramentas para monetização, e a curiosidade sobre os ganhos de outros criadores são os principais motivadores. A promessa de um guia prático para entrar na economia dos influenciadores gera alto engajamento.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@secrets.nicolly/video/7562588998342872338" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@secrets.nicolly/video/7562588998342872338</a>
+                    <div class="url-sentence">Como eu consegui parceria com a Shein</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@iversoniorio/video/7588560093952675090" target="_blank" class="url-link">• https://www.tiktok.com/@iversoniorio/video/7588560093952675090</a>
+                    <div class="url-sentence">QUEM PAGA MAIS</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@pedrodecarvalho/video/7437182506555673912" target="_blank" class="url-link">• https://www.tiktok.com/@pedrodecarvalho/video/7437182506555673912</a>
+                    <div class="url-sentence">9,5 mi Quanto o me pagou por 9</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@valterazevedobr/video/7500933646275104005" target="_blank" class="url-link">• https://www.tiktok.com/@valterazevedobr/video/7500933646275104005</a>
+                    <div class="url-sentence">Essas são as 3 MELHORES IAS pra criar vídeos virais pro seu INSTAGRAM</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@tutorilaw/video/7486263111498943799" target="_blank" class="url-link">• https://www.tiktok.com/@tutorilaw/video/7486263111498943799</a>
+                    <div class="url-sentence">SE VOCÊ FAZ LIVE E NÃO TEM WEBCAM; VOCÊ PRECISA DESSE GATINHO</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@rayaneluquecomproposito/video/7580083983661190407" target="_blank" class="url-link">• https://www.tiktok.com/@rayaneluquecomproposito/video/7580083983661190407</a>
+                    <div class="url-sentence">Com quantas visualizações o começa a pagar 💰</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@tiktoques.sobrenaturais/video/7285446568159890693" target="_blank" class="url-link">• https://www.tiktok.com/@tiktoques.sobrenaturais/video/7285446568159890693</a>
+                    <div class="url-sentence">INFLUENCIADORA É PERSEGUIDA POR PALHAÇO NA COREIA, Uma youtuber chamada Sasha, estava aproveitando suas</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@manuvinas/video/7462431109033544965" target="_blank" class="url-link">• https://www.tiktok.com/@manuvinas/video/7462431109033544965</a>
+                    <div class="url-sentence">Como abrir uma live e Monetizar</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@socochichei/video/7582048809920892167" target="_blank" class="url-link">• https://www.tiktok.com/@socochichei/video/7582048809920892167</a>
+                    <div class="url-sentence">SÓ COCHICHEICOCHICHEIAlex Mendes revela que não está mais namorando: "Primeira temporada solteiro"</div>
+                </div>
+                </div></div></article>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">EM RELAÇÃO À ESCOLA AS PESSOAS ELAS LIDAM BEM COM TIPO VOCÊ SER UMA</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 7 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">Esta trend desmistifica a vida do influenciador digital, expondo as realidades de oportunismo, inveja e fofocas que permeiam a fama online. Ela contrasta o glamour percebido com as dificuldades e a busca por autenticidade em meio à pressão pública. A trend também revela a resiliência e o espírito empreendedor de criadores, ao lado da crescente automação na produção de conteúdo.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Uma grande marca pode explorar essa trend patrocinando conteúdo que mostre a jornada autêntica e os desafios reais de criadores, valorizando a resiliência e o empreendedorismo. Pode também se posicionar como um parceiro que oferece suporte genuíno, indo além da superficialidade das métricas e celebrando as histórias de superação. Marcas podem ainda desmistificar seus próprios processos, conectando-se com a busca por transparência e originalidade.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@thisisuzoficial/video/7559987130886376716" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@thisisuzoficial/video/7559987130886376716</a>
+                    <div class="url-sentence">EM RELAÇÃO À ESCOLA AS PESSOAS ELAS LIDAM BEM COM TIPO VOCÊ SER UMA</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@rafa15petkovic/video/7588143357986196757" target="_blank" class="url-link">• https://www.tiktok.com/@rafa15petkovic/video/7588143357986196757</a>
+                    <div class="url-sentence">A INFLUENCIADORA QUE MUDOU SEU NOME PARA REESCREVER UMA NOVA HISTÓRIA DE SUA VIDA</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@airon.ia/video/7597936966633622805" target="_blank" class="url-link">• https://www.tiktok.com/@airon.ia/video/7597936966633622805</a>
+                    <div class="url-sentence">COMO FAZER ESSES VÍDEOS DE INFLUENCIADORAS VENDENDO ROUPAS COM MOVIMENTOS REALISTAS FIQUE GATA semprEE</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@rafaellolli_/video/7559247650097351992" target="_blank" class="url-link">• https://www.tiktok.com/@rafaellolli_/video/7559247650097351992</a>
+                    <div class="url-sentence">JÁ NÃO SEI O CÊ MAS EU SOU INFLUENCER DIGITAL</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@plincast/video/7286575586435206406" target="_blank" class="url-link">• https://www.tiktok.com/@plincast/video/7286575586435206406</a>
+                    <div class="url-sentence">FOI A IDEIA VOCÊ TAVA JOGANDO O DIA A DIA DO FUTEÇÃO NÃO É</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@onicolasmagal/video/7454647799007694086" target="_blank" class="url-link">• https://www.tiktok.com/@onicolasmagal/video/7454647799007694086</a>
+                    <div class="url-sentence">COMO CRIAR VÍDEOS DARK PRO SEM PRECISAR APARECER USANDO INTELIGÊNCIA ARTIFICIAL SEU CONTEÚDO NÃO</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@tutorilaw/video/7498515595890068791" target="_blank" class="url-link">• https://www.tiktok.com/@tutorilaw/video/7498515595890068791</a>
+                    <div class="url-sentence">Se você quer fazer live no utilizando SOMENTE o OBS se liga só nesse</div>
+                </div>
+                </div></div></article></section><section id="topico_7" class="topic-section"><div class="topic-header"><span class="topic-badge">TÓPICO 7</span></div>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">NOVIDADE NO : RECOMPENSA ADICIONAL 🤑atualizações do TikTokrecompensas mudou e ficou ainda melhorhoje</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 5 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">Criadores de conteúdo no TikTok estão discutindo as recentes atualizações no programa de recompensas, com foco na introdução de uma "Recompensa Adicional". Esta nova modalidade premia vídeos de alta qualidade, especializados e com alto engajamento que tenham mais de um minuto de duração. A trend enfatiza a importância de conteúdo original, bom tempo de visualização e interação genuína para maximizar ganhos e crescimento na plataforma.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Marcas podem desenvolver estratégias de conteúdo que priorizem a criação de vídeos mais longos e aprofundados, explorando um nicho específico de seus produtos ou serviços para se posicionar como especialistas. É crucial focar em gerar engajamento autêntico, incentivando comentários relevantes e promovendo uma interação bidirecional com a comunidade. Além disso, colaborar com criadores que já estão se destacando nessas novas métricas de recompensa pode amplificar a visibilidade e a credibilidade da marca.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@midiaspagas/video/7463437938118905094" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@midiaspagas/video/7463437938118905094</a>
+                    <div class="url-sentence">NOVIDADE NO : RECOMPENSA ADICIONAL 🤑atualizações do TikTokrecompensas mudou e ficou ainda melhorhoje</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@gabisilvacreator/video/7568965478727634183" target="_blank" class="url-link">• https://www.tiktok.com/@gabisilvacreator/video/7568965478727634183</a>
+                    <div class="url-sentence">só postar vídeo não vai fazer você crescer, é sério</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@rayaneluquecomproposito/video/7580083983661190407" target="_blank" class="url-link">• https://www.tiktok.com/@rayaneluquecomproposito/video/7580083983661190407</a>
+                    <div class="url-sentence">Com quantas visualizações o começa a pagar 💰</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@mrnedicao/video/7596694562236534036" target="_blank" class="url-link">• https://www.tiktok.com/@mrnedicao/video/7596694562236534036</a>
+                    <div class="url-sentence">Como VIRALIZAR NO TIK TOK ESSA SEMANA; 1</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@patiicreator/video/7595595221878967572" target="_blank" class="url-link">• https://www.tiktok.com/@patiicreator/video/7595595221878967572</a>
+                    <div class="url-sentence">Como consegui 1</div>
+                </div>
+                </div></div></article>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">Seu Story Cruvinel 爱 Boa y nova</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 5 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">Esta trend reflete a busca intensa por engajamento e visibilidade nas redes sociais, onde usuários simulam o impacto de "grupos de engajamento" com um alto volume de notificações e mensagens. Paralelamente, explora-se a otimização de interações sociais, utilizando ferramentas como inteligência artificial para gerar respostas criativas e cantadas em conversas online. É a manifestação do desejo por uma presença digital otimizada e eficaz.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Uma grande marca pode criar uma campanha interativa que simule o sucesso de engajamento ao interagir com seus produtos ou serviços, convidando os usuários a compartilharem suas próprias "notificações de sucesso" com a marca. Outra abordagem é desenvolver um chatbot divertido ou filtro de IA que ajude os consumidores a encontrar o item perfeito ou a criar mensagens espirituosas sobre a marca, capitalizando na busca por interações personalizadas e autênticas.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@mihzinha_04/video/7571686053170433301" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@mihzinha_04/video/7571686053170433301</a>
+                    <div class="url-sentence">Seu Story Cruvinel 爱 Boa y nova</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@alysonschneider/video/7600177601973325077" target="_blank" class="url-link">• https://www.tiktok.com/@alysonschneider/video/7600177601973325077</a>
+                    <div class="url-sentence">You replied to their story Tu entende alguma coisa sobre iluminação</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@flirtaapp/video/7607107489326189845" target="_blank" class="url-link">• https://www.tiktok.com/@flirtaapp/video/7607107489326189845</a>
+                    <div class="url-sentence">Você respondeu ao storyOii, passando pra te desejar uma boa terça feira</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@h3yzitos23/video/7391901605886479622" target="_blank" class="url-link">• https://www.tiktok.com/@h3yzitos23/video/7391901605886479622</a>
+                    <div class="url-sentence">Responder ao comentário de snoopyxereca gemidao do watts @ 😎 heitoreditz 👍</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@nocented/video/7604666144280087826" target="_blank" class="url-link">• https://www.tiktok.com/@nocented/video/7604666144280087826</a>
+                    <div class="url-sentence">meu instagram depois de entrar no grupo de engajamento:</div>
+                </div>
+                </div></div></article>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">LISTA DE OFENSAS PARA NÃO PERDER A CLASSE, INTELIGENTE ASSINTOMÁTICO, SUA FALA FAZ O</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 8 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">Esta trend consiste em compartilhar listas de "ofensas" inteligentes e indiretas, permitindo aos usuários criticar ou expressar desaprovação de forma bem-humorada sem perder a classe. É uma forma de comunicação que valoriza a sutileza, o sarcasmo e a criatividade no uso da linguagem. O objetivo é usar a sagacidade para pontuar comportamentos ou situações de forma sofisticada e cômica.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Grandes marcas podem incorporar o tom sagaz e inteligente da trend em campanhas que sutilmente destaquem os diferenciais de seus produtos ou serviços, evitando comparações diretas com concorrentes. Podem criar conteúdos educativos que desmintam mitos ou desafios de forma espirituosa, posicionando a marca como a "escolha inteligente" através do humor. É uma excelente oportunidade para marcas que buscam uma persona mais perspicaz, sofisticada e ligeiramente provocadora, engajando o público com mensagens memoráveis e cheias de personalidade.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@fatofantasia/video/7567776852991905044" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@fatofantasia/video/7567776852991905044</a>
+                    <div class="url-sentence">LISTA DE OFENSAS PARA NÃO PERDER A CLASSE, INTELIGENTE ASSINTOMÁTICO, SUA FALA FAZ O</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@news24hor4s/video/7601150203944619271" target="_blank" class="url-link">• https://www.tiktok.com/@news24hor4s/video/7601150203944619271</a>
+                    <div class="url-sentence">TU VAI ME GRAVAR</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@coloridinhox/video/7317663439470578949" target="_blank" class="url-link">• https://www.tiktok.com/@coloridinhox/video/7317663439470578949</a>
+                    <div class="url-sentence">SOMENTE O SEU 3º @ CONSEGUE SER MAIS FOFO QUE O COLORIDINHO 😉</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@quesiaemanueleoficial/video/7609069280591744263" target="_blank" class="url-link">• https://www.tiktok.com/@quesiaemanueleoficial/video/7609069280591744263</a>
+                    <div class="url-sentence">QUÉSIA EMANUELE</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@eu.lukas29/video/7589809418351480072" target="_blank" class="url-link">• https://www.tiktok.com/@eu.lukas29/video/7589809418351480072</a>
+                    <div class="url-sentence">1/5</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@morazimcelular/video/7537049641431485702" target="_blank" class="url-link">• https://www.tiktok.com/@morazimcelular/video/7537049641431485702</a>
+                    <div class="url-sentence">NÃO CONSEGUE REPLICAR VÍDEOS</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@raquelnetto1/video/7460602402853391621" target="_blank" class="url-link">• https://www.tiktok.com/@raquelnetto1/video/7460602402853391621</a>
+                    <div class="url-sentence">Se garotas apoiam garotas</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@lobis_edits/video/7582722635008593160" target="_blank" class="url-link">• https://www.tiktok.com/@lobis_edits/video/7582722635008593160</a>
+                    <div class="url-sentence">© 2025 LOBIS COPYRIGHTS RESERVED</div>
+                </div>
+                </div></div></article></section><section id="topico_8" class="topic-section"><div class="topic-header"><span class="topic-badge">TÓPICO 8</span></div>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">APP SECRETO PRA GRAVAR VÍDEOS E LER O ROTEIRO AO MESMO TEMPO 🤯</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 13 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">Essa trend é caracterizada pela apresentação de dicas, "segredos" e funcionalidades pouco conhecidas de aplicativos e ferramentas digitais. Os vídeos oferecem soluções práticas, recomendações de apps ou alertam sobre configurações importantes, focando em otimizar a experiência do usuário e desvendar conhecimentos considerados exclusivos. O público busca por eficiência, descoberta e maneiras de simplificar ou aprimorar sua vida digital.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Uma grande marca pode se inserir na trend criando conteúdo que revele "dicas secretas" ou funcionalidades inexploradas de seus próprios produtos ou serviços, ensinando o público a usá-los de forma mais eficaz. Pode também lançar tutoriais rápidos sobre como seus produtos se integram a outras ferramentas digitais populares, agregando valor e posicionando-se como um facilitador da vida online do consumidor.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@byrafaelachagas/video/7269905977376541957" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@byrafaelachagas/video/7269905977376541957</a>
+                    <div class="url-sentence">APP SECRETO PRA GRAVAR VÍDEOS E LER O ROTEIRO AO MESMO TEMPO 🤯</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@vivianccunhaa/video/7460602561545030918" target="_blank" class="url-link">• https://www.tiktok.com/@vivianccunhaa/video/7460602561545030918</a>
+                    <div class="url-sentence">LARA JÁ ENTENDI VOCÊ TÁ FAZENDO NÃO É O CARTÃO DO NUBANK E SIM</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@pelainteligencia/video/7273984508964195589" target="_blank" class="url-link">• https://www.tiktok.com/@pelainteligencia/video/7273984508964195589</a>
+                    <div class="url-sentence">FERRAMENTA QUE PROIBIDA NUNCA E OLHA SÓ PODE FAZER TE PERMITE DE QUALQUER IMAGEM</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@_giigibraga/video/7594992857081990420" target="_blank" class="url-link">• https://www.tiktok.com/@_giigibraga/video/7594992857081990420</a>
+                    <div class="url-sentence">Tá AFIM DE CONHECER PESSOAS NOVAS DE UMA FORMA FÁCIL E DIVERTIDA</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@livrestrada/video/7467696136514489633" target="_blank" class="url-link">• https://www.tiktok.com/@livrestrada/video/7467696136514489633</a>
+                    <div class="url-sentence">5 STREAMINGS BRASILEIROS GRATUITOS BOM DEMAIS NÉ ESSE VÍDEO PRA AQUELA PESSOA BOM FILME</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@albertokouty.shop/video/7594203868339424533" target="_blank" class="url-link">• https://www.tiktok.com/@albertokouty.shop/video/7594203868339424533</a>
+                    <div class="url-sentence">Nova FUNÇÃO no tik tok para VIRALIZAR</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@jsmdicas/video/7607594415275920660" target="_blank" class="url-link">• https://www.tiktok.com/@jsmdicas/video/7607594415275920660</a>
+                    <div class="url-sentence">CUIDADO ALERTA GOOGLE FOTOS CONVERSAS E ATÉ MESMO AÍ AQUELAS INFORMAÇÕES ÍNTIMAS ELE TEM</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@elli.tech/video/7595587088108621077" target="_blank" class="url-link">• https://www.tiktok.com/@elli.tech/video/7595587088108621077</a>
+                    <div class="url-sentence">CUIDADO COM ESSA NOVA FUNÇÃO NO WHATSAPP</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@noticiasredetv/video/7606118289734913301" target="_blank" class="url-link">• https://www.tiktok.com/@noticiasredetv/video/7606118289734913301</a>
+                    <div class="url-sentence">MÁFIA CHINESA LIGADA AO PCC LAVA R$ 1 BILHÃO NO MERCADO ELETRÔNICO OPERAÇÃO CONTRA</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@bloop.eu/video/7581642015222287638" target="_blank" class="url-link">• https://www.tiktok.com/@bloop.eu/video/7581642015222287638</a>
+                    <div class="url-sentence">HÁ, PRIMEIRA APP PORTUGUESA, The First Social Shopping Network, REVOLUCIONAR, NÓS, ONLINE, COMBINAÇÃO DE</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@sousa.editzz/video/7521122650278677816" target="_blank" class="url-link">• https://www.tiktok.com/@sousa.editzz/video/7521122650278677816</a>
+                    <div class="url-sentence">editzzVIMeu souREALesse manoSIMULA fiz tudo que elaPOSSOser tudo que elame abandonouPROVAquis ser minhaALUNAo</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@sergiomachadooficial/video/7592374702757154056" target="_blank" class="url-link">• https://www.tiktok.com/@sergiomachadooficial/video/7592374702757154056</a>
+                    <div class="url-sentence">CNH do Brasil; EDUCAÇÃO Conheça nossa plataforma de cursos; CONDUTOR Gerencie sua habilitação; Módulo</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@mariaz_ofc/video/7397196690089954566" target="_blank" class="url-link">• https://www.tiktok.com/@mariaz_ofc/video/7397196690089954566</a>
+                    <div class="url-sentence">O povo quando eu chego nos cantos:</div>
+                </div>
+                </div></div></article>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">gente eu acabei de descobrir um app super legal e vejam esse vídeo até</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 6 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">A trend gira em torno da descoberta e do compartilhamento de novas aplicações, atualizações de sistemas operacionais e tecnologias digitais. Ela reflete o interesse do público em ferramentas que prometem facilitar a vida, oferecer novas formas de conexão social ou possibilitar uma maior personalização de seus dispositivos. Há um forte apelo por novidades que sejam acessíveis e que melhorem a experiência digital diária.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Uma grande marca pode criar conteúdo que apresente funcionalidades inovadoras de seu app ou plataforma, enfatizando como elas atendem às demandas por personalização, segurança ou novas interações. A marca pode colaborar com criadores para que "descubram" e destaquem de forma autêntica os benefícios e recursos diferenciados de seus produtos digitais. Assim, a marca se posiciona como um player que oferece soluções tecnológicas relevantes e alinhadas aos anseios do consumidor por inovação e controle.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@maferrsantucci/video/7314050981237411077" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@maferrsantucci/video/7314050981237411077</a>
+                    <div class="url-sentence">gente eu acabei de descobrir um app super legal e vejam esse vídeo até</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@janyuri/video/7379238480238480646" target="_blank" class="url-link">• https://www.tiktok.com/@janyuri/video/7379238480238480646</a>
+                    <div class="url-sentence">PRINCIPAIS FUNÇÕES DO NOVO iOS 18</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@pedroparacampos/video/7155980402644094214" target="_blank" class="url-link">• https://www.tiktok.com/@pedroparacampos/video/7155980402644094214</a>
+                    <div class="url-sentence">Por que ninguém tá falando sobre a nova rede social que o Elon Musk</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@jhoufernandes22/video/7407209834031910149" target="_blank" class="url-link">• https://www.tiktok.com/@jhoufernandes22/video/7407209834031910149</a>
+                    <div class="url-sentence">25/08/2024 19:34NetflixYouTubeAPPSConfiguraçõesArquivoChromeBrowseHPlay</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@curiosidadesinsanas.br/video/7605282803336432917" target="_blank" class="url-link">• https://www.tiktok.com/@curiosidadesinsanas.br/video/7605282803336432917</a>
+                    <div class="url-sentence">parece que dizendo quando vai chegar o você já ouvido falar no mozbook mozbook</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@gui.cassiri/video/7087581840160197894" target="_blank" class="url-link">• https://www.tiktok.com/@gui.cassiri/video/7087581840160197894</a>
+                    <div class="url-sentence">Gostaria de transformar seu celular em uma televisão</div>
+                </div>
+                </div></div></article>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">marketing no para negócios criar audiência no ATUALIZAÇÃO DO TIK TOK EM FEVEREIRO DE</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 7 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">Esta trend gira em torno da divulgação de "novas" ou "subutilizadas" ferramentas e funcionalidades do TikTok, como FlipStory, POV ou a priorização de Stories. Criadores prometem que o algoritmo recompensa quem as utiliza primeiro, garantindo maior alcance e potencial de viralização. Os vídeos incluem tutoriais e um senso de urgência para adesão rápida, visando o crescimento da audiência.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Marcas podem se posicionar como early adopters e inovadoras, criando conteúdo que explore e demonstre o uso criativo dessas "novas" funcionalidades para apresentar produtos ou serviços. Podem também lançar desafios incentivando a comunidade a produzir conteúdo autêntico usando essas ferramentas, gerando User Generated Content e ampliando o alcance orgânico. Colaborar com criadores que lideram essa narrativa pode impulsionar a visibilidade da marca.
+
+Riscos e Cuidados: É fundamental verificar a real novidade e eficácia das funcionalidades, pois muitas vezes o hype pode ser maior que o impacto duradouro, levando a estratégias rapidamente obsoletas. Marcas devem evitar o oportunismo ou a inautenticidade, garantindo que o uso das ferramentas se alinhe aos seus valores e à sua estratégia de conteúdo geral. Além disso, o foco excessivo em métricas de vaidade pode desviar a atenção de objetivos de negócios mais substanciais.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@porleticiag/video/7604573378258767125" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@porleticiag/video/7604573378258767125</a>
+                    <div class="url-sentence">marketing no para negócios criar audiência no ATUALIZAÇÃO DO TIK TOK EM FEVEREIRO DE</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@tiktok_promote_official/video/7451896823716924704" target="_blank" class="url-link">• https://www.tiktok.com/@tiktok_promote_official/video/7451896823716924704</a>
+                    <div class="url-sentence">Quer mais seguidores</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@rogeriocriador/video/7597924088564305160" target="_blank" class="url-link">• https://www.tiktok.com/@rogeriocriador/video/7597924088564305160</a>
+                    <div class="url-sentence">Atualização 2026 (Ferramenta nova), Isso pode aumentar suas visualizações, o , acabou de, liberar</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@porleticiag/video/7601915676126661909" target="_blank" class="url-link">• https://www.tiktok.com/@porleticiag/video/7601915676126661909</a>
+                    <div class="url-sentence">TIK TOK FLIP STORY O FUTURO DO TIK TOK (Trend Janeiro 2026) a maioria</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@caroolbatistaa/video/7606141919185374472" target="_blank" class="url-link">• https://www.tiktok.com/@caroolbatistaa/video/7606141919185374472</a>
+                    <div class="url-sentence">NOVA ATUALIZAÇÃO DO : o lançou mais uma ferramenta, silenciosamente, e nesse momento ela</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@porleticiag/video/7605719021966724373" target="_blank" class="url-link">• https://www.tiktok.com/@porleticiag/video/7605719021966724373</a>
+                    <div class="url-sentence">ATUALIZAÇÃO 2026 Novo Alerta de Trend 💥 chocante essa atualização do que me fez</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@eu.heronreis/video/7330016221468855557" target="_blank" class="url-link">• https://www.tiktok.com/@eu.heronreis/video/7330016221468855557</a>
+                    <div class="url-sentence">Fiz mais de 1k na kirvanoa nova plataforma do Ruyterem vinte e quatro horase</div>
+                </div>
+                </div></div></article>
+        <article class="trend-card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <h2 class="trend-title">🚨🚨 Atualização do 🚨🚨(Passo a passo incluso) O FEZ UMA NOVA ATUALIZAÇÃO E SILENCIOSAMENTE</h2>
+                <span style="background:#f1f5f9; padding:5px 12px; border-radius:8px; font-size:0.85em; font-weight:600; color:#475569;">
+                    📦 7 vídeos no cluster
+                </span>
+            </div>
+
+            <span class="label">Resumo:</span>
+            <div class="content">Esta trend é sobre a descoberta e o uso da nova ferramenta "Autocut" (ou "Flip Story") do TikTok. Usuários estão ensinando um passo a passo para criar vídeos curtos automaticamente a partir de fotos ou vídeos da galeria. Acredita-se que o uso desta ferramenta, postando nos Stories e sem alterar a música, garante maior alcance e viralização, pois o TikTok prioriza a distribuição de conteúdos que exploram seus novos recursos.</div>
+
+            <span class="label">Como usar:</span>
+            <div class="content">Marcas podem utilizar o Autocut para criar Stories curtos e dinâmicos, mostrando produtos, bastidores ou coleções de forma autêntica e nativa. Isso demonstra que a marca está atualizada com as ferramentas da plataforma, aproveitando o impulso de distribuição que o TikTok oferece para novos recursos. É uma oportunidade para alcançar novas audiências e reforçar a imagem de uma marca inovadora e conectada com as tendências.</div>
+
+            <div class="links-area">
+                <span class="label" style="margin-bottom:10px;">🔗 Evidências no TikTok:</span>
+                <div class="link-list">
+        
+                <div class="centroid-box">
+                    <span class="centroid-tag">🌟 VÍDEO CENTRÓIDE (REFERÊNCIA DA TREND)</span>
+                    <a href="https://www.tiktok.com/@dicastiktokcomhelo/video/7605669204762578196" target="_blank" style="color:#b45309; font-weight:700; text-decoration:none; font-size:1em;">https://www.tiktok.com/@dicastiktokcomhelo/video/7605669204762578196</a>
+                    <div class="url-sentence">🚨🚨 Atualização do 🚨🚨(Passo a passo incluso) O FEZ UMA NOVA ATUALIZAÇÃO E SILENCIOSAMENTE</div>
+                </div>
+                <div>
+                    <a href="https://www.tiktok.com/@haidi.comproposito/video/7603756202681666824" target="_blank" class="url-link">• https://www.tiktok.com/@haidi.comproposito/video/7603756202681666824</a>
+                    <div class="url-sentence">Do zero ao Shop Dia 8Nova atualização aqui no pra você viralizarNOVA ATUALIZAÇÃOVOCÊ PRECISA</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@luiza.curi/video/7607930624141249813" target="_blank" class="url-link">• https://www.tiktok.com/@luiza.curi/video/7607930624141249813</a>
+                    <div class="url-sentence">Nova atualização do Liberada 17/02/26 🇨🇭</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@eduardacsmendes/video/7609125477659184392" target="_blank" class="url-link">• https://www.tiktok.com/@eduardacsmendes/video/7609125477659184392</a>
+                    <div class="url-sentence">Ig: Nova atualização do que pode VIRALIZAR sua conta 👑🚩 TÁ MAS VOCÊ JÁ</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@porleticiag/video/7608972430375193877" target="_blank" class="url-link">• https://www.tiktok.com/@porleticiag/video/7608972430375193877</a>
+                    <div class="url-sentence">🛑 NOVA FERRAMENTA 🛑 FEVEREIRO DE 2026 (use para ir para a fyp)</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@gui.cassiri/video/7599699439049133332" target="_blank" class="url-link">• https://www.tiktok.com/@gui.cassiri/video/7599699439049133332</a>
+                    <div class="url-sentence">Informação muito importante</div>
+                </div>
+                
+                <div>
+                    <a href="https://www.tiktok.com/@thrangel23/video/7593084452604136725" target="_blank" class="url-link">• https://www.tiktok.com/@thrangel23/video/7593084452604136725</a>
+                    <div class="url-sentence">12 novas séries que chegam em 2026</div>
+                </div>
+                </div></div></article></section>
+        <footer>
+            Gerado em 25/02/2026 às 03:09 | Live.tt Analytics Engine v2.7
+        </footer>
+    </div>
+</body>
+</html>
